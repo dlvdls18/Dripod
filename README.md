@@ -109,7 +109,7 @@ Then if you're gonna modify the second one with index `0`, the pointer will be:
 // ^ here
 ```
 
-Otherwise (index: 1), the pointer will he:
+Otherwise (index: 1), the pointer will be:
 ```js
 [  11, 111  ]
 //      ^ here

@@ -77,3 +77,47 @@ To modify the bit, specify which byte is to modify.
 - `dest_<byte-index>_at_<bit_index>`
 - `mod_<byte-index>_at_<bit_index>`
 - `ins_<byte-index>_at_<bit_index>`
+
+
+## Wrong and Right Ways
+
+If you want to destroy the first byte and modify the second byte, you should do this:
+```js
+Dripod("hello", {
+  dest_0: true,
+  mod_0: 1
+});
+```
+
+and not this:
+```js
+Dripod("hello", {
+  dest_0: true,
+  mod_1: 1
+});
+```
+
+**Reason**
+
+Example bytes: `[1, 11, 111]`.
+
+If you're gonna destroy the first one, the result is: `[11, 111]`.
+Then if you're gonna modify the second one with index `0`, the pointer will be:
+
+```js
+[  11, 111  ]
+// ^ here
+```
+
+Otherwise (index: 1), the pointer will he:
+```js
+[  11, 111  ]
+//      ^ here
+```
+
+***
+
+**NOTE:**
+
+> Each bytes will be parse as `integer`
+  so it is not recommended to add `float` numbers, `negative` numbers and `NaN` (not a number).

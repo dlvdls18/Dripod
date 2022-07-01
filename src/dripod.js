@@ -47,5 +47,5 @@ Dripod.Builder = function(bytes) {
   bytes.forEach(function(byte) {
     str += String.fromCharCode(parseInt(byte, 2));
   });
-  return str;"
+  return str;
 }

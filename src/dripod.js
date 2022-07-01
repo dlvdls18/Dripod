@@ -40,5 +40,8 @@ function Dripod(text, config) {
     bitIndex = 0;
     byteIndex++;
   });
-  return red;
+  return res;
+}
+Dripod.Builder = function(byt) {
+  
 }

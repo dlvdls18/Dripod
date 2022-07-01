@@ -44,6 +44,8 @@ function Dripod(text, config) {
 }
 Dripod.Builder = function(bytes) {
   var str = "";
-  bytes.forEach(function()
+  bytes.forEach(function(byte) {
+    
+  });
   return str;"
 }

@@ -126,4 +126,4 @@ Otherwise (index: 1), the pointer will be:
 ```j
 Dripod.Builder(["1101000", "1100101", "1101100", "1101100", "1101111"]);
 // hello
-```<
+```

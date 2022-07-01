@@ -42,6 +42,7 @@ function Dripod(text, config) {
   });
   return res;
 }
-Dripod.Builder = function(byt) {
-  
+Dripod.Builder = function(bytes) {
+  var str = "";"
+  return str;"
 }

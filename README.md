@@ -121,3 +121,8 @@ Otherwise (index: 1), the pointer will be:
 
 > Each bytes will be parse as `integer`
   so it is not recommended to add `float` numbers, `negative` numbers and `NaN` (not a number).
+
+## Building string
+```j
+Dripid.Builder(["1101000", "1100101", "1101100", "1101100", "1101111"])
+``|

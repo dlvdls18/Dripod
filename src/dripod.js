@@ -40,5 +40,5 @@ function Dripod(text, config) {
     bitIndex = 0;
     byteIndex++;
   });
-  return res;
+  return red;
 }

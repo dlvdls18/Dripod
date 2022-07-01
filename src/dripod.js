@@ -43,6 +43,7 @@ function Dripod(text, config) {
   return res;
 }
 Dripod.Builder = function(bytes) {
-  var str = "";"
+  var str = "";
+  
   return str;"
 }

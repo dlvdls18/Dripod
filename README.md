@@ -124,5 +124,6 @@ Otherwise (index: 1), the pointer will be:
 
 ## Building string
 ```j
-Dripid.Builder(["1101000", "1100101", "1101100", "1101100", "1101111"])
+Dripod.Builder(["1101000", "1100101", "1101100", "1101100", "1101111"]);
+// hello
 ``|
